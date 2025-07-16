@@ -130,3 +130,101 @@ body.light button {
 #quote-btn:hover {
   background-color: #666;
 }
+#current-games {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.game-grid {
+  display: flex;
+  justify-content: center;     /* this centers the cards */
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;              /* helps with layout */
+}
+
+
+.game-card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #222;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  text-align: center;
+}
+
+.column {
+  background: #000000c4;
+  padding: 20px;
+  flex: 1;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.gallery {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery-item {
+  background: #efc800;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
