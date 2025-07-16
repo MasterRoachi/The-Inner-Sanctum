@@ -228,3 +228,18 @@ body {
 .gallery-item:hover {
   transform: scale(1.05);
 }
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box {
+    background: #efc800;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+    margin: 10px;
+}
