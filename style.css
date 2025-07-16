@@ -1,0 +1,84 @@
+/* Base layout */
+body {
+  background-color: #121212;
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header + nav */
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Form styling */
+form {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #1c1c1c;
+  border: none;
+  color: #fff;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
