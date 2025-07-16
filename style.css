@@ -82,3 +82,30 @@ button:hover {
     flex-direction: column;
   }
 }
+
+/* Light Mode Styles */
+body.light {
+  background-color: #f4f4f4;
+  color: #121212;
+}
+
+body.light header,
+body.light footer {
+  background-color: #ddd;
+  color: #333;
+}
+
+body.light nav a {
+  color: #333;
+}
+
+body.light input,
+body.light textarea {
+  background-color: #fff;
+  color: #000;
+}
+
+body.light button {
+  background-color: #ccc;
+  color: #000;
+}
