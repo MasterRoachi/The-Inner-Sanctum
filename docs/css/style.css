@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  background-color: #1e1e1e;
+  color: #cfa763;
+  font-family: system-ui, sans-serif;
+  background-image: url('../img/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header */
+.main-header {
+  background-color: #16385a;
+  color: #cfa763;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Nav */
+.main-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'advent pro', sans-serif;
+  transition: color 0.3s ease;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: #cfa763;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  min-height: 20vh;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/*Quotes Section */
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+
+}
+#quote-box {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  max-width: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.quote-overlay {
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #f0c674;
+  text-align: center;
+  pointer-events: none;
+}
+
+#quote-text {
+  color: #fff;
+  font-weight: 500;
+  font-family: 'advent pro', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px #000;
+}
+
+#quote-author {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Featured Section */
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #222;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #cfa763;
+}
+
+.card {
+  text-align: center;
+  background-color: #16385a;
+  color: #cfa763;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #cfa763;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #b28c4d;
+}
