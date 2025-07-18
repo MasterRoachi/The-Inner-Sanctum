@@ -63,6 +63,7 @@ body {
   color: #cfa763;
 }
 
+/* Hero Section */
 .hero {
   background-image: url('../img/hero-bg.png');
   background-size: cover;
@@ -80,4 +81,57 @@ body {
 
 .hero p {
   font-size: 1.2rem;
+}
+
+/* Featured Section */
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #222;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #cfa763;
+}
+
+.card {
+  text-align: center;
+  background-color: #16385a;
+  color: #cfa763;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #cfa763;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #b28c4d;
 }
