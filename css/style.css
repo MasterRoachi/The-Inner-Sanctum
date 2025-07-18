@@ -23,11 +23,11 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -54,59 +54,30 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  font-family: 'advent pro', sans-serif;
+  transition: color 0.3s ease;
+  gap: 1.5rem;
 }
 
 .nav-links a:hover {
   color: #cfa763;
 }
 
-/* Hero Section */
-.hero-section {
-  height: 100vh;
-  background-image: url('img/hero-bg.png');
+.hero {
+  background-image: url('../img/hero-bg.png');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 4rem 2rem;
   text-align: center;
-  color: #fff;
-  position: relative;
+  color: white;
+  min-height: 60vh;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  padding: 1rem;
-}
-
-.hero-content h2 {
-  font-size: 3rem;
-  font-family: 'Georgia', serif;
+.hero h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-subtext {
+.hero p {
   font-size: 1.2rem;
-  font-style: italic;
-  color: #ffe5a0;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #cfa763;
-  color: #1a1a1a;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #FFD700;
 }
